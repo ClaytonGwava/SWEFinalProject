@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+button {
+    cursor: pointer;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.auth-card h2 {
+    margin-bottom: 20px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-card input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.auth-card button,
+.question-card button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+}
+
+.auth-card button:disabled,
+.question-card button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.dashboard {
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+}
+
+.dashboard-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-section button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #ef4444;
+    color: white;
+}
+
+.dashboard-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.question-card,
+.answer-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.question-card textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    resize: vertical;
+    margin: 15px 0;
+    font-family: inherit;
+}
+
+.answer {
+    white-space: pre-wrap;
+    line-height: 1.7;
+}
+
+.loading {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
