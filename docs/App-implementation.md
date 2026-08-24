@@ -143,8 +143,8 @@ User
 
 EduAI uses a course-specific RAG architecture.
 
+## Document Ingestion
 ```text
-Document Ingestion
 Uploaded Document
        |
        v
@@ -161,7 +161,10 @@ Generate Embeddings
        |
        v
 FAISS Vector Store
-Question Answering
+```
+
+## Question Answering
+```text
 Student Question
        |
        v
