@@ -157,3 +157,45 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.course-item p {
+    margin: 5px 0;
+}
+
+.course-item small {
+    color: #6b7280;
+}
+
+.course-item button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+}
+
+.question-card label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.question-card input,
+.question-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}

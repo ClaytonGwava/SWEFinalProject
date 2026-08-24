@@ -68,6 +68,12 @@ def register(
         ),
         role=user_data.role
     )
+    
+    if user_data.role not in ["student", "faculty"]:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid role"
+        )
 
     db.add(user)
     db.commit()

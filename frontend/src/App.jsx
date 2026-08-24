@@ -8,12 +8,15 @@ import {
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
-
+import FacultyDashboard from "./pages/FacultyDashboard";
+import Navbar from "./components/Navbar";
 
 function App() {
 
     return (
         <BrowserRouter>
+
+            
 
             <Routes>
 
@@ -30,6 +33,11 @@ function App() {
                 <Route
                     path="/dashboard"
                     element={<Dashboard />}
+                />
+
+                <Route
+                    path="/faculty"
+                    element={<FacultyDashboard />}
                 />
 
                 <Route

@@ -23,6 +23,9 @@ function Register() {
     const [loading, setLoading] =
         useState(false);
 
+    const [role, setRole] = 
+        useState("student");
+
 
     async function handleSubmit(event) {
 
@@ -37,7 +40,7 @@ function Register() {
                 username,
                 email,
                 password,
-                role: "student"
+                role: role
             });
 
             navigate("/");
@@ -127,7 +130,24 @@ function Register() {
                         required
                     />
 
+                    <label>
+                        Register As
+                    </label>
 
+                    <select
+                        value={role}
+                        onChange={(event) =>
+                            setRole(event.target.value)
+                        }
+                    >
+                        <option value="student">
+                            Student
+                        </option>
+
+                        <option value="faculty">
+                            Faculty
+                        </option>
+                    </select>
                     <button
                         type="submit"
                         disabled={loading}
