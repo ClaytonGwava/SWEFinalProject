@@ -6,7 +6,6 @@
 **Course:** CS425 – Software Engineering  
 **Project:** EduAI – AI-Powered Academic Assistant  
 **Technology:** Python, FastAPI, React, SQLite, FAISS, OpenAI  
-**Deployment:** Local Development
 
 ---
 
